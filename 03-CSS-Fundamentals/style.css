@@ -1,16 +1,18 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* Universal selector applies to all elements but has the lowest priority and can be easily overridden  */
+/* * {
+	border-top: 10px solid #1098ad;
+} */
+
+/* the body selector will apply all rules by inheritance to its child elements */
+body {
+	color: #444;
 	font-family: sans-serif;
-	color: #444444;
 }
 
 h1,
 h2,
 h3 {
+	font-family: sans-serif;
 	color: #1098ad;
 }
 
@@ -149,3 +151,11 @@ footer p {
 	color: green !important;
 }
  */
+
+/* nav a:link {
+	font-size: 18px;
+} */
+
+nav {
+	font-size: 18px;
+}
