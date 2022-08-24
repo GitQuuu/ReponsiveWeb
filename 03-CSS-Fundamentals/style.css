@@ -103,6 +103,31 @@ li:nth-child(even) {
 	color: red;
 } */
 
-article p:last-child {
+/* article p:last-child {
 	color: red;
+} */
+
+/*Styling links*/
+a:link {
+	color: #1098ad;
+	text-decoration: none;
 }
+
+a:visited {
+	/* color: #777; */
+	color: #1098ad;
+}
+
+a:hover {
+	color: orangered;
+	font-weight: bold;
+	font-size: xx-large;
+	text-decoration: underline dotted orangered;
+}
+
+a:active {
+	background-color: yellowgreen;
+	font-style: italic;
+}
+
+/* LVHA use this to remember the order of styling links */
