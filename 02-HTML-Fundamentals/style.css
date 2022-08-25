@@ -1,0 +1,59 @@
+body {
+	font-family: sans-serif;
+	border: 5px black solid;
+	font-weight: bold;
+	font-size: small;
+	line-height: 1.4;
+}
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: large;
+	font-weight: bolder;
+	background-color: #f7f7f7;
+}
+
+.alternativeText {
+	font-size: smaller;
+	color: lightslategrey;
+	text-transform: uppercase;
+}
+
+.price {
+	font-size: medium;
+	text-transform: uppercase;
+}
+
+.more-info:link,
+.more-info:visited {
+	color: black;
+}
+
+.more-info:hover,
+.more-info:active {
+	text-decoration: none;
+}
+
+.details-title {
+	text-transform: uppercase;
+}
+
+.details-list {
+	list-style: square;
+}
+
+.add-cart {
+	background-color: black;
+	color: white;
+	font-size: larger;
+	text-transform: uppercase;
+	border: none;
+}
+
+.add-cart:hover {
+	background-color: white;
+	color: black;
+	border: none;
+	cursor: pointer;
+}
