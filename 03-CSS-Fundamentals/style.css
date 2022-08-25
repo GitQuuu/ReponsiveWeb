@@ -15,6 +15,7 @@ body {
 	background-color: #f7f7f7;
 	padding: 20px 40px;
 	margin-bottom: 60px;
+	height: 80px;
 }
 
 .post-header {
@@ -29,7 +30,8 @@ aside {
 	background-color: #f7f7f7;
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
-	padding: 50px 50px;
+	padding: 50px 0px;
+	width: 500px;
 }
 
 article {
@@ -161,6 +163,11 @@ a:hover {
 a:active {
 	background-color: yellowgreen;
 	font-style: italic;
+}
+
+.post-img {
+	width: 100%;
+	height: auto;
 }
 
 /* LVHA use this to remember the order of styling links */
