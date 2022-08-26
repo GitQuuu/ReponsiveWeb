@@ -18,6 +18,22 @@ p {
 	border: 5px black solid;
 	width: 650px;
 	margin: 50px auto;
+	position: relative;
+}
+
+header h1::before {
+	content: "SALE";
+	position: absolute;
+	background-color: red;
+	color: white;
+	font-weight: normal;
+	font-size: small;
+	letter-spacing: 5px;
+	display: inline-block;
+	margin-left: -125px;
+	margin-top: -16px;
+	padding: 5px 5px;
+	top: 0;
 }
 
 .title {
@@ -30,11 +46,52 @@ p {
 	padding-bottom: 20px;
 }
 
-.alternativeText {
+.shipping {
 	font-size: smaller;
 	color: lightslategrey;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	position: relative;
+}
+
+.wrapper {
+	display: flex;
+}
+
+.box {
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin: 5px;
+	margin-top: 15px;
+}
+
+.box:first-child {
+	margin-left: 0;
+}
+
+.black {
+	background: #000000;
+}
+
+.blue {
+	background: #13b4ff;
+}
+
+.red {
+	background: #ff0303;
+}
+
+.orange {
+	background: orange;
+}
+
+.green {
+	background: green;
+}
+
+.brown {
+	background: brown;
 }
 
 .price {
