@@ -20,7 +20,7 @@ body {
 	background-color: #f7f7f7;
 	padding: 20px 40px;
 	margin-bottom: 60px;
-	height: 80px;
+	/* height: 80px; */
 }
 
 .post-header {
@@ -43,6 +43,7 @@ article {
 	margin-bottom: 60px;
 }
 
+/*Smaller elements*/
 h1,
 h2,
 h3 {
@@ -84,9 +85,10 @@ p {
 	margin-bottom: 15px;
 }
 
-u li {
+li {
 	font-size: 20px;
 	margin-bottom: 10px;
+	display: inline;
 }
 
 li:last-child {
@@ -173,6 +175,20 @@ a:active {
 .post-img {
 	width: 100%;
 	height: auto;
+}
+
+nav a:link {
+	/* background-color: orange;
+	margin: 5px;
+	padding: 20px;
+	display: block; */
+	margin: 5px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+nav a:link:last-child {
+	margin-right: 0;
 }
 
 /* LVHA use this to remember the order of styling links */
