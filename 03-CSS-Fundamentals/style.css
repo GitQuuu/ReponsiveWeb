@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-	width: 700px;
+	width: 1200px;
 	margin: 0 auto;
 }
 
@@ -262,7 +262,6 @@ footer p {
 }
 
 .author {
-	/* padding-left: 80px; */
 	float: left;
 	margin-top: 10px;
 	margin-left: 20px;
@@ -284,4 +283,17 @@ nav {
 	clear: both;
 	content: "";
 	display: block;
+}
+
+article {
+	width: 65%;
+	float: left;
+}
+aside {
+	width: 30%;
+	float: right;
+}
+
+footer {
+	clear: both;
 }
