@@ -47,25 +47,15 @@ header h1::before {
 	padding-bottom: 20px;
 }
 
-.shipping {
-	font-size: smaller;
-	color: lightslategrey;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	position: relative;
-	float: right;
-	margin-right: 35px;
-}
-
-.wrapper {
+.product-colors {
 	display: flex;
+	gap: 10px;
 }
 
 .box {
 	width: 20px;
 	height: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	margin: 5px;
 	margin-top: 15px;
 }
 
@@ -100,7 +90,12 @@ header h1::before {
 .price {
 	font-size: medium;
 	text-transform: uppercase;
-	float: left;
+}
+
+.shipping {
+	font-size: smaller;
+	color: lightslategrey;
+	text-transform: uppercase;
 }
 
 .more-info:link,
@@ -147,23 +142,13 @@ header h1::before {
 }
 
 .product-image {
-	clear: both;
-	float: left;
 	margin-right: 40px;
 }
 
 .product-info {
-	float: left;
-	width: 243px;
 	margin-top: 40px;
 }
 
 .product-details {
-	float: right;
-	width: 243px;
 	margin-top: 20px;
-}
-
-.product-description {
-	clear: both;
 }
