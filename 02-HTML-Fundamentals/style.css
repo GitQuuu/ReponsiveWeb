@@ -38,6 +38,7 @@ body {
 	text-transform: uppercase;
 	background-color: #f7f7f7;
 	padding: 15px;
+	grid-column: 1/-1;
 }
 
 /* PRODUCT INFORMATION */
@@ -157,11 +158,18 @@ body {
 	text-transform: uppercase;
 	cursor: pointer;
 	padding: 15px;
-	width: 100%;
 	border-top: 4px solid black;
+	grid-column: 1/-1;
 }
 
 .add-cart:hover {
 	color: #000;
 	background-color: #fff;
+}
+
+/*CSS GRID*/
+article {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 5px;
 }
