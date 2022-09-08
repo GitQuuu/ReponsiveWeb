@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pagination component</title>
+		<style>
+			.container {
+				width: 500px;
+				margin: 100px auto;
+				display: grid;
+				grid-template-columns: repeat(10, 1fr);
+			}
+
+			button {
+				border-radius: 50%;
+				border: 2px solid #087f5b;
+				background-color: #fff;
+			}
+			.icon {
+				stroke: #087f5b;
+				transform: scale(0.5);
+			}
+
+			.icon:active {
+				stroke: white;
+			}
+
+			.left-button {
+				grid-column: 1/1;
+			}
+			.right-button {
+				grid-column: 10/11;
+			}
+
+			.numbers {
+				text-decoration: none;
+				font-size: larger;
+				padding: 12px 16px;
+				border-radius: 50%;
+			}
+
+			.one {
+				grid-column: 2/3;
+				grid-row: 1;
+				justify-self: center;
+				align-self: center;
+			}
+
+			.two {
+				grid-column: 3/4;
+				grid-row: 1;
+				justify-self: center;
+				align-self: center;
+			}
+
+			.three {
+				grid-column: 4/5;
+				grid-row: 1;
+				justify-self: center;
+				align-self: center;
+				background-color: #087f5b;
+				color: #fff;
+			}
+
+			.four {
+				grid-column: 5/6;
+				grid-row: 1;
+				justify-self: center;
+				align-self: center;
+			}
+			.five {
+				grid-column: 6/7;
+				grid-row: 1;
+				justify-self: center;
+				align-self: center;
+			}
+			.six {
+				grid-column: 7/8;
+				grid-row: 1;
+				justify-self: center;
+				align-self: center;
+			}
+			.seven {
+				grid-column: 8/9;
+				grid-row: 1;
+				justify-self: center;
+				align-self: center;
+			}
+			.eight {
+				grid-column: 9/10;
+				grid-row: 1;
+				justify-self: center;
+				align-self: center;
+			}
+
+			a:hover {
+				background-color: #087f5b;
+				color: #fff;
+			}
+
+			button:hover .icon {
+				background-color: #087f5b;
+				margin: -30px;
+				stroke: #fff;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<button class="left-button">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M15.75 19.5L8.25 12l7.5-7.5"
+					/>
+				</svg>
+			</button>
+			<button class="right-button">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="icon"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M8.25 4.5l7.5 7.5-7.5 7.5"
+					/>
+				</svg>
+			</button>
+			<a href="" class="numbers one">1</a>
+			<a href="" class="numbers two">2</a>
+			<a href="" class="numbers three">3</a>
+			<a href="" class="numbers four">4</a>
+			<a href="" class="numbers five">5</a>
+			<a href="" class="numbers six">6</a>
+			<a href="" class="numbers seven">...</a>
+			<a href="" class="numbers eight">23</a>
+		</div>
+	</body>
+</html>
