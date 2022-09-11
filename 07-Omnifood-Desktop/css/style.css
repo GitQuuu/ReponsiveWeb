@@ -34,9 +34,22 @@ Default: 1
 	box-sizing: border-box;
 }
 
+html {
+	/*Default fontsize is 16 we want it set to 10*/
+	/* 10px/16px is 0.625 = 62.5%    */
+	font-size: 62.5%;
+}
+
 body {
 	font-family: sans-serif;
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
+}
+
+.test {
+	background-color: red;
+	max-width: 80rem;
+	padding: 4rem;
+	font-size: 2rem;
 }
