@@ -21,6 +21,10 @@ Paragraph default: 1.6
 
 Default: 1
 
+- LETTER SPACING
+-0.5px
+0.75px
+
 --- 02 COLORS
 -Primary color: #e67e22
 -Tints: #fae5d3
@@ -59,13 +63,35 @@ body {
 /*GENERAL REUSABLE COMPONENTS*/
 /*************************/
 
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #333;
+  color: #2e1907;
+  color: #343a40;
+}
+
 .heading-primary {
   font-size: 5.2rem;
-  font-weight: 700;
   line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 
 .btn:link,
@@ -136,6 +162,10 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4 1fr);
 }
 
 /*************************/
@@ -267,5 +297,19 @@ body {
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: aqua;
+}
+
+.step-text-box {
+}
+.step-number {
+  font-size: 7rem;
+}
+.heading-tertiary {
+}
+.step-description {
+}
+. .step-img-box {
+}
+.step-image {
+  width: 50%;
 }
