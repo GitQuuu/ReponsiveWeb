@@ -12,7 +12,14 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"
+    ></script>
     <title>Omnifood</title>
   </head>
   <body>
@@ -157,6 +164,7 @@
         </div>
       </section>
 
+      <!-- Meals sections -->
       <section class="section-meals">
         <div class="container">
           <span class="subheading">Meals</span>
@@ -166,7 +174,27 @@
         </div>
 
         <div class="container grid grid--3-cols">
-          <div class="meal">Meals</div>
+          <div class="meal">
+            <img
+              src="img/meals/meal-1.jpg"
+              alt="Japanese Gyoza"
+              class="meal-img"
+            />
+            <span class="tag">Vegatarian</span>
+            <p class="meal-title">Japanese gyoza</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon name="flame"></ion-icon> <span>650 calories</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon name="restaurant"></ion-icon
+                ><span>NutriScore &reg; 74</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon name="star"></ion-icon> <span>4.9 rating (537)</span>
+              </li>
+            </ul>
+          </div>
           <div class="meal">Meals</div>
           <div class="list">List of diets</div>
         </div>

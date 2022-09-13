@@ -230,5 +230,24 @@
 }
 .meal {
 }
+
+.meal-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-img {
+  width: 100%;
+}
 .list {
 }
