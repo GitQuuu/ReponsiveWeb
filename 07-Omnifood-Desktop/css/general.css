@@ -112,7 +112,8 @@ body {
 	text-decoration: none;
 
 	/*Transition must be on original ( parent selector )*/
-	transition: background-color 0.3s;
+	/* transition: background-color 0.3s; */
+	transition: all 0.3s;
 }
 
 .btn--full:link,
