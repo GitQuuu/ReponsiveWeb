@@ -149,7 +149,11 @@ body {
 }
 
 .margin-bottom-sm {
-	margin-bottom: 2rem;
+	margin-bottom: 2rem !important;
+}
+
+.margin-bottom-md {
+	margin-bottom: 4.8rem !important;
 }
 
 .container {
@@ -179,4 +183,8 @@ body {
 
 .grid--center-v {
 	align-items: center;
+}
+
+.center-text {
+	text-align: center;
 }
