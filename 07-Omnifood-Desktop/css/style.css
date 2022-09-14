@@ -389,7 +389,37 @@
 /*PRICING SECTIONSSECTIONS*/
 /*************************/
 
+.section-pricing {
+  padding: 9.6rem 0;
+}
 .pricing-plan {
+  border-radius: 1.1rem;
+
+  width: 75%;
+}
+
+.pricing-plan--complete {
+  background-color: #fae5d3;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best Value";
+  position: absolute;
+  background-color: #ffd43b;
+  color: #6f6f6f;
+  padding: 0.8rem 8rem;
+  top: 10%;
+  right: -10%;
+  transform: rotate(45deg);
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fae5d3;
+  padding: 4.6rem;
 }
 
 .plan-header {
