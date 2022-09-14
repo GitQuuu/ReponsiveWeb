@@ -467,21 +467,14 @@
 
 .feature-icon {
 	color: #e67e22;
-	height: 2.4rem;
-	width: 2.4rem;
+	height: 3.2rem;
+	width: 3.2rem;
 	margin-bottom: 3.2rem;
+	background-color: #fae5d3;
+	padding: 1.6rem;
+	border-radius: 50%;
 }
 
-.feature-title::after {
-	position: absolute;
-	content: "";
-	background-color: #fae5d3;
-	padding: 2rem 2rem;
-	border-radius: 50%;
-	top: -3%;
-	left: -3.5%;
-	z-index: -1;
-}
 .feature-title {
 	font-size: 2.4rem;
 	color: #333;
