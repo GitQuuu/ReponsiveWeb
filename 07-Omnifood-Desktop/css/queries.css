@@ -28,3 +28,45 @@ and to check the formular in pixel just do the oppisite by multiple
 		padding: 1.6rem 1.6rem;
 	}
 }
+
+/*************************/
+/*BELOW 1200px (Landscape tablets)*/
+/*************************/
+
+@media (max-width: 75em) {
+	html {
+		/*Calculate the font-size % by 
+    So in this case we want 9px for font-size
+    9/16 = 0,5625 = 56.25%*/
+		font-size: 56.25%;
+	}
+
+	.grid {
+		column-gap: 4.8rem;
+		row-gap: 6.4rem;
+	}
+
+	.heading-secondary {
+		font-size: 3.6rem;
+	}
+
+	.heading-tertiary {
+		font-size: 2.4rem;
+	}
+
+	.header {
+		padding: 0 3.2rem;
+	}
+
+	.hero {
+		gap: 4.8rem;
+	}
+
+	.main-nav-list {
+		gap: 3.2rem;
+	}
+
+	.testimonials-container {
+		padding: 9.6rem 3.2rem;
+	}
+}
