@@ -1,0 +1,17 @@
+/*rem and em do NOT depend on html font-size in media queries!
+Instead 1rem = 1em = 16px*/
+
+/*************************/
+/*BELOW 1344px (Smaller desktops)*/
+/*************************/
+
+/* Calculate with em instead of rem formular is:
+pixel / with default value 16 = em value 
+and to check the formular in pixel just do the oppisite by multiple
+84*16 = pixel value*/
+
+@media (max-width: 84em) {
+	.hero {
+		max-width: 120rem;
+	}
+}
