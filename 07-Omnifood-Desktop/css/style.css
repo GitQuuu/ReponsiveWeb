@@ -61,6 +61,9 @@
 	border: none;
 	background: none;
 	cursor: pointer;
+
+	/* By default the mobile nav should not be visibel  */
+	display: none;
 }
 
 .icon-mobile-nav {

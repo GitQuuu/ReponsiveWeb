@@ -76,6 +76,7 @@ and to check the formular in pixel just do the oppisite by multiple
 /********/
 
 @media (max-width: 60em) {
+
 	/* 8px for fontsize */
 	html {
 		/*Calculate the font-size % by 
@@ -134,5 +135,33 @@ and to check the formular in pixel just do the oppisite by multiple
 
 	.btn-form {
 		margin-top: 1.2rem;
+	}
+
+	/* MoBILE NAVIVATION */
+	.btn-mobile-nav {
+		display: block;
+	}
+
+	.main-nav {
+		background-color: rgba(255, 255, 255, 0.93);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.main-nav-list {
+		flex-direction: column;
+		gap: 4.8rem;
+	}
+
+	.main-nav-link:link,
+	.main-nav-link:visited {
+		font-size: 3rem;
 	}
 }
