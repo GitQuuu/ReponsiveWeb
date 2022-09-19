@@ -57,6 +57,26 @@
 	background-color: #cf711f;
 }
 
+.btn-mobile-nav {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.icon-mobile-nav {
+	width: 4.8rem;
+	height: 4.8rem;
+	color: #333;
+}
+
+.icon-mobile-nav[name="close"] {
+	display: none;
+}
+
+/* .btn-mobile-nav .icon-mobile-nav[name="close"] {
+	display: none;
+} */
+
 /*************************/
 /*HERO SECTIONS*/
 /*************************/
@@ -76,8 +96,7 @@
 	gap: 9.6rem;
 }
 
-.hero-text-box {
-}
+.hero-text-box {}
 
 .hero-img {
 	width: 100%;
@@ -159,8 +178,7 @@
 	padding: 9.6rem 0;
 }
 
-.step-text-box {
-}
+.step-text-box {}
 
 .step-number {
 	font-size: 8.6rem;
@@ -235,8 +253,7 @@
 	padding: 9.6rem 0;
 }
 
-.meal {
-}
+.meal {}
 
 .meal-title {
 	font-size: 2rem;
@@ -357,8 +374,7 @@
 	column-gap: 8rem;
 }
 
-.testimonial {
-}
+.testimonial {}
 
 .testimonial-img {
 	width: 6.4rem;
@@ -546,11 +562,9 @@
 }
 
 .cta-img-box {
-	background-image: linear-gradient(
-			to right bottom,
+	background-image: linear-gradient(to right bottom,
 			rgba(235, 151, 78, 0.3),
-			rgba(230, 125, 34, 0.3)
-		),
+			rgba(230, 125, 34, 0.3)),
 		url(../img/eating.jpg);
 	background-size: cover;
 	background-position: center;
