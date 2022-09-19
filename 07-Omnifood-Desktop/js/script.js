@@ -44,9 +44,15 @@ allLinks.forEach((link) => {
 			});
 		}
 
+		// scroll to each section by its attribute href
 		if (href !== "#" && href.startsWith("#")) {
 			const sectionEl = document.querySelector(href);
 			sectionEl.scrollIntoView({ behavior: "smooth" });
+		}
+
+		// Close mobile navigation
+		if (link.classList.contains("main-nav-link")) {
+			headerEL.classList.toggle("nav-open");
 		}
 	});
 });
