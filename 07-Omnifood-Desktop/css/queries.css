@@ -153,7 +153,7 @@ and to check the formular in pixel just do the oppisite by multiple
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		transition: all 0.5s;
+		transition: all 0.5s ease-in;
 		transform: translateX(100%);
 
 		/* Hide the navigation */
@@ -170,6 +170,7 @@ and to check the formular in pixel just do the oppisite by multiple
 		opacity: 1;
 		pointer-events: auto;
 		visibility: visible;
+		transform: translate(0);
 	}
 
 	.nav-open .icon-mobile-nav[name="close"] {
