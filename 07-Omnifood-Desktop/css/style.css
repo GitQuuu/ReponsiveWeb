@@ -81,6 +81,17 @@
 	display: none;
 } */
 
+/* STICKY NAVIGATION */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.93);
+	z-index: 999;
+}
+
 /*************************/
 /*HERO SECTIONS*/
 /*************************/
@@ -100,7 +111,8 @@
 	gap: 9.6rem;
 }
 
-.hero-text-box {}
+.hero-text-box {
+}
 
 .hero-img {
 	width: 100%;
@@ -182,7 +194,8 @@
 	padding: 9.6rem 0;
 }
 
-.step-text-box {}
+.step-text-box {
+}
 
 .step-number {
 	font-size: 8.6rem;
@@ -257,7 +270,8 @@
 	padding: 9.6rem 0;
 }
 
-.meal {}
+.meal {
+}
 
 .meal-title {
 	font-size: 2rem;
@@ -378,7 +392,8 @@
 	column-gap: 8rem;
 }
 
-.testimonial {}
+.testimonial {
+}
 
 .testimonial-img {
 	width: 6.4rem;
@@ -566,9 +581,11 @@
 }
 
 .cta-img-box {
-	background-image: linear-gradient(to right bottom,
+	background-image: linear-gradient(
+			to right bottom,
 			rgba(235, 151, 78, 0.3),
-			rgba(230, 125, 34, 0.3)),
+			rgba(230, 125, 34, 0.3)
+		),
 		url(../img/eating.jpg);
 	background-size: cover;
 	background-position: center;
