@@ -140,6 +140,7 @@ and to check the formular in pixel just do the oppisite by multiple
 	/* MoBILE NAVIVATION */
 	.btn-mobile-nav {
 		display: block;
+		z-index: 9999;
 	}
 
 	.main-nav {
