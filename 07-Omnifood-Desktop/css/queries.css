@@ -154,13 +154,29 @@ and to check the formular in pixel just do the oppisite by multiple
 		align-items: center;
 		justify-content: center;
 		transition: all 0.5s;
+
 		/* Hide the navigation */
 		opacity: 0;
 
+		/* Make it unaccesible to mouse and keyboard */
+		pointer-events: none;
+
+		/* Hide from screen readers */
+		visibility: hidden;
 	}
 
 	.nav-open .main-nav {
 		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+	}
+
+	.nav-open .icon-mobile-nav[name="close"] {
+		display: block;
+	}
+
+	.nav-open .icon-mobile-nav[name="menu"] {
+		display: none;
 	}
 
 	.main-nav-list {
