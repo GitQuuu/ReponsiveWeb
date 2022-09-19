@@ -25,25 +25,35 @@ const btnNavEL = document.querySelector(".btn-mobile-nav");
 const headerEL = document.querySelector(".header");
 
 btnNavEL.addEventListener("click", () => {
-  headerEL.classList.toggle("nav-open");
+	headerEL.classList.toggle("nav-open");
 });
 
-console.log(btnNavEL);
+// Smooth scrolling animation
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach((link) => {
+	link.addEventListener("click", (e) => {
+		e.preventDefault();
+		const href = link.getAttribute("href");
+		console.log(href);
+	});
+});
+
 function checkFlexGap() {
-  var flex = document.createElement("div");
-  flex.style.display = "flex";
-  flex.style.flexDirection = "column";
-  flex.style.rowGap = "1px";
+	var flex = document.createElement("div");
+	flex.style.display = "flex";
+	flex.style.flexDirection = "column";
+	flex.style.rowGap = "1px";
 
-  flex.appendChild(document.createElement("div"));
-  flex.appendChild(document.createElement("div"));
+	flex.appendChild(document.createElement("div"));
+	flex.appendChild(document.createElement("div"));
 
-  document.body.appendChild(flex);
-  var isSupported = flex.scrollHeight === 1;
-  flex.parentNode.removeChild(flex);
-  console.log(isSupported);
+	document.body.appendChild(flex);
+	var isSupported = flex.scrollHeight === 1;
+	flex.parentNode.removeChild(flex);
+	console.log(isSupported);
 
-  if (!isSupported) document.body.classList.add("no-flexbox-gap");
+	if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
 
