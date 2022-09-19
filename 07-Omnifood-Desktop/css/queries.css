@@ -198,16 +198,41 @@ and to check the formular in pixel just do the oppisite by multiple
 
 @media(max-width: 50em) {
 
+
+	html {
+		font-size: 37.5%;
+	}
+
 	.grid--3-cols,
 	.grid--4-cols {
 		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.diets {
+
 		grid-column: 1/-1;
 		justify-self: center;
+
+		width: 100%;
 	}
 
+	.list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-column: 1/-1;
+
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+	.list-icon {
+		max-width: 1.8rem;
+	}
+
+	.heading-tertiary {
+		text-align: center;
+	}
 
 	.heading-secondary {
 		margin-bottom: 3.2rem;
