@@ -340,4 +340,9 @@ and to check the formular in pixel just do the oppisite by multiple
 	.cta {
 		grid-template-columns: 1fr;
 	}
+
+	.section-hero {
+		margin-top: 9.6rem;
+	}
+
 }
