@@ -25,53 +25,76 @@ const btnNavEL = document.querySelector(".btn-mobile-nav");
 const headerEL = document.querySelector(".header");
 
 btnNavEL.addEventListener("click", () => {
-	headerEL.classList.toggle("nav-open");
+  headerEL.classList.toggle("nav-open");
 });
 
 // Smooth scrolling animation
 const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach((link) => {
-	link.addEventListener("click", (e) => {
-		e.preventDefault();
-		const href = link.getAttribute("href");
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const href = link.getAttribute("href");
 
-		// Scroll back to top
-		if (href === "#") {
-			window.scrollTo({
-				top: 0,
-				behavior: "smooth",
-			});
-		}
+    // Scroll back to top
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
 
-		// scroll to each section by its attribute href
-		if (href !== "#" && href.startsWith("#")) {
-			const sectionEl = document.querySelector(href);
-			sectionEl.scrollIntoView({ behavior: "smooth" });
-		}
+    // scroll to each section by its attribute href
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
 
-		// Close mobile navigation
-		if (link.classList.contains("main-nav-link")) {
-			headerEL.classList.toggle("nav-open");
-		}
-	});
+    // Close mobile navigation
+    if (link.classList.contains("main-nav-link")) {
+      headerEL.classList.toggle("nav-open");
+    }
+  });
+
+  // STICKY NAVIGATION
+  const sectionHeroEL = document.querySelector(".section-hero");
+
+  const observer = new IntersectionObserver(
+    function (entries) {
+      const ent = entries[0];
+
+      if (ent.isIntersecting === false) {
+        console.log(ent);
+        document.body.classList.add("sticky");
+      } else {
+        document.body.classList.remove("sticky");
+      }
+    },
+    {
+      // in the viewport
+      root: null,
+      threshold: 0,
+      rootMargin: "-80px",
+    }
+  );
+  observer.observe(sectionHeroEL);
 });
 
 function checkFlexGap() {
-	var flex = document.createElement("div");
-	flex.style.display = "flex";
-	flex.style.flexDirection = "column";
-	flex.style.rowGap = "1px";
+  var flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = "1px";
 
-	flex.appendChild(document.createElement("div"));
-	flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
 
-	document.body.appendChild(flex);
-	var isSupported = flex.scrollHeight === 1;
-	flex.parentNode.removeChild(flex);
-	console.log(isSupported);
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+  console.log(isSupported);
 
-	if (!isSupported) document.body.classList.add("no-flexbox-gap");
+  if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
 

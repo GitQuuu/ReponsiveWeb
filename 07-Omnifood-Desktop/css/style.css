@@ -83,13 +83,21 @@
 
 /* STICKY NAVIGATION */
 
-.sticky {
+.sticky .header {
 	position: fixed;
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.93);
+	background-color: rgba(255, 255, 255, 0.895);
 	z-index: 999;
+	height: 8rem;
+	padding-top: 0;
+	padding-bottom: 0;
+	box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+	margin-top: 9.6rem;
 }
 
 /*************************/
@@ -99,7 +107,7 @@
 .section-hero {
 	background-color: #fae5d3;
 	padding: 4.8rem 0 9.6rem 0;
-	margin-top: 6.8rem;
+
 }
 
 .hero {
@@ -112,8 +120,7 @@
 	gap: 9.6rem;
 }
 
-.hero-text-box {
-}
+.hero-text-box {}
 
 .hero-img {
 	width: 100%;
@@ -195,8 +202,7 @@
 	padding: 9.6rem 0;
 }
 
-.step-text-box {
-}
+.step-text-box {}
 
 .step-number {
 	font-size: 8.6rem;
@@ -271,8 +277,7 @@
 	padding: 9.6rem 0;
 }
 
-.meal {
-}
+.meal {}
 
 .meal-title {
 	font-size: 2rem;
@@ -393,8 +398,7 @@
 	column-gap: 8rem;
 }
 
-.testimonial {
-}
+.testimonial {}
 
 .testimonial-img {
 	width: 6.4rem;
@@ -582,11 +586,9 @@
 }
 
 .cta-img-box {
-	background-image: linear-gradient(
-			to right bottom,
+	background-image: linear-gradient(to right bottom,
 			rgba(235, 151, 78, 0.3),
-			rgba(230, 125, 34, 0.3)
-		),
+			rgba(230, 125, 34, 0.3)),
 		url(../img/eating.jpg);
 	background-size: cover;
 	background-position: center;
