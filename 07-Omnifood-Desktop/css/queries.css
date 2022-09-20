@@ -144,7 +144,8 @@ and to check the formular in pixel just do the oppisite by multiple
 	}
 
 	.main-nav {
-		background-color: rgba(255, 255, 255, 0.93);
+		background-color: rgba(255, 255, 255, 0.6);
+		backdrop-filter: blur(10px);
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -340,9 +341,4 @@ and to check the formular in pixel just do the oppisite by multiple
 	.cta {
 		grid-template-columns: 1fr;
 	}
-
-	.section-hero {
-		margin-top: 9.6rem;
-	}
-
 }
